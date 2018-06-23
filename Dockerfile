@@ -1,4 +1,4 @@
 FROM golang
 
 RUN apt-get update && \
-    apt-get install -y brtfs-tools libseccomp-dev
+    apt-get install -y btrfs-tools libseccomp-dev
