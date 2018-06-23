@@ -6,7 +6,7 @@ $ docker run -it --privileged \
     -v ${GOPATH}/src/github.com/opencontainers/runc:/go/src/github.com/opencontainers/runc \
     -v ${GOPATH}/src/github.com/containerd/containerd:/go/src/github.com/containerd/containerd \
     -e GOPATH=/go \
-    -w /go/src/github.com/containerd/containerd containerd/build sh
+    -w /go/src/github.com/containerd/containerd packself/containerd_builder sh
 
 From within our Docker container let's build `containerd`:
 $ cd /go/src/github.com/containerd/containerd
